@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body {
+  transition: 2s ease-in-out background-color;
+  background-color: snow;
+}
+
+.body--dark {
+  background-color: #333;
+}
+
+.button {
+  font-size: 2rem;
+  cursor: pointer;
+  font-family: monospace;
+  border: 5px solid #333;
+  padding: 0.5rem 1rem;
+
+  transition: 2s ease-in-out background-color;
+  background-color: snow;
+  border-radius: 2px;
+  color: #333;
+}
+
+.button-dark {
+  border: 5px solid snow;
+  background-color: #333;
+  color: snow;
+  box-shadow: 0 0 50px yellow, 0 0 900px yellow, 0 0 100px yellow;
+
+  background: linear-gradient(to right, white 50%, lightgrey 50%);
+  background-size: 200% 50%;
+  background-position: right bottom;
+  transition: all 2s ease-out;
+}
