@@ -11,8 +11,31 @@ body {
   margin-inline: auto;
 }
 
+main {
+  display: grid;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+}
+
+header * {
+  border-bottom: solid black;
+}
+
+header > div {
+  border-right: solid black;
+}
+
 div {
   text-align: center;
+}
+
+main > div {
+  height: 400px;
+  align-content: center;
 }
 
 #output {
@@ -25,9 +48,18 @@ menu {
 
   display: grid;
   grid-template-columns: repeat(13, 1fr);
-  gap: 0.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-left: 0rem;
 }
 
 button {
   width: 100%;
+}
+
+#newGameBtn {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
 }
