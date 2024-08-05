@@ -53,6 +53,12 @@ menu {
   padding-left: 0rem;
 }
 
+form {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 button {
   width: 100%;
 }
